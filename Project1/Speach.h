@@ -5,7 +5,6 @@
 #include <fstream>
 #include <string>
 #include <thread>
-#include <mutex>
 
 using namespace std;
 
@@ -15,7 +14,6 @@ private:
     const string filePath = "output.txt";           // Path to output file
     thread pyThread;                               // Thread for running Python script
     thread procThread;                             // Thread for processing output file
-    mutex mtx;                                     // Mutex for synchronizing file access
 
 public:
     Speach();

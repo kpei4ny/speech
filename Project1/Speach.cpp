@@ -66,9 +66,6 @@ void Speach::process_output_file() {
             if (!newLastLine.empty() && newLastLine != lastLine) {
                 lastLine = newLastLine;  // Update last line
 
-                // Lock the mutex to safely modify the file
-                lock_guard<mutex> guard(mtx);
-
                 // Handle commands in the last line
                 if (lastLine.find("next") != string::npos) {
                     ofstream clearing(filePath.c_str());
