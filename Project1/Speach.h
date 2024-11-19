@@ -5,13 +5,12 @@
 #include <fstream>
 #include <string>
 #include <thread>
-
 using namespace std;
 
 class Speach {
 private:
-    const char* pythonCommand = "python3 main.py";  // Path to Python script
-    const string filePath = "output.txt";           // Path to output file
+    const char* pythonCommand = "python3 ..\\Python\\main.py";  // Path to Python script
+    const string filePath = "..\\Python\\output.txt";           // Path to output file
     thread pyThread;                               // Thread for running Python script
     thread procThread;                             // Thread for processing output file
 

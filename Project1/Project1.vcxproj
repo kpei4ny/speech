@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="Speach.cpp" />
   </ItemGroup>
   <ItemGroup>
